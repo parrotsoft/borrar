@@ -42,7 +42,7 @@ def decode_token(token: Annotated[str, Depends(oauth2_scheme)]):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hola Miguel"}
 
 @app.post("/login")
 def login(user_data: UserLogin):
